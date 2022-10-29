@@ -1,0 +1,84 @@
+<html>
+    <head>
+        
+        <style>
+            p{
+                font-size: 20px;
+                font-family: sans-serif;
+            }
+            div{
+               
+                width:400px;
+                border-radius: 8px;
+                margin-top: 100px;
+                /*background-color: aliceblue;*/
+                padding-bottom: 30px;
+                
+            }
+            input[type="text"],input[type="password"],input[type="date"],input[type="number"],input[type="email"]{
+                border:2pxsolidblack;
+                border-radius: 8px;
+                font-size: 18px;
+                height:40px;
+                width:300px;
+                text-align: center;
+                font-family: sans-serif;
+            }
+            input[type="text"]:focus,input[type="password"]:focus,input[type="date"]:focus,input[type="number"]:focus,input[type="email"]:focus{
+                background-color: aqua;
+            }
+            input[type="submit"]{
+                font-family: sans-serif;
+                font-size: 20px;
+                border: 2pxsolidblue;
+                height: 40px;
+                
+              
+                color: white;
+                width:300px;
+                background-color: blue;
+
+            }
+            input[type="submit"]:hover{
+                opacity:0.5;
+                cursor: pointer;
+            }
+            body{
+                background: url("bg1.png");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                background-color: bisque;
+            }
+           label{
+            font-size: 20px;
+
+           }
+        </style>
+    </head>
+    <body>
+        <center>
+        <div>
+           
+           <h1>SignUp Here</h1>
+           <form id="user-form">
+               <input type="text" id="name" name="name"placeholder="Enter Your Name"required><br/><br/>
+               <input type="password" id="password" name="pwd" placeholder="Enter Password"required><br/><br/>
+               <input type="email" id="email" name="email"placeholder="Enter Your Email"required><br/><br/>
+               <input type="date" id="dob" name="dob"placeholder="Enter Date of Birth"required><br/><br/>
+              <input type="checkbox" id="acceptTerms">
+              <label>I have read and accepted terms</label> 
+              <br/>
+               <input type="submit" name="submit" value="Sign Up">
+               
+           </form>
+           <br/>
+         
+          
+        </div>
+        <h1>Entries</h1>
+        <div id="user-entries"></div>
+    </center>
+    <script type="text/javascript" src="regi.js"></script>
+    </body>
+</html>
